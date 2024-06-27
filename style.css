@@ -1,0 +1,110 @@
+:root{
+    --shadow: 0 0 10px rgb(0 0 0/0.5);
+}
+
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans',sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(100%); /* Menambahkan filter blur */
+    transition: filter 0.5s ease; /* Menambahkan transisi untuk filter */
+}
+
+.hero:hover::before {
+    filter: none; /* Menghapus filter saat hover */
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero h1,.hero h4,.hero p{
+    color: white;
+    text-shadow: var(--shadow);
+}
+
+.hero h1{
+    font-family: 'Sacramento',cursive;
+    font-size: 6rem;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: black;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* media query */
+@media (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section{
+        padding:70px;
+    }}
+/* tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section{
+        padding:60px;
+        margin: 5px;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px){
+    html{
+        font-size: 60%;   
+    }
+    .simply-countdown>.simply-section{
+        padding:45px;
+        margin: 3px;
+    }
+    
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    main{
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width: 450px){
+    .hero h1 {
+        font-size: 4rem;
+    }
+}   
