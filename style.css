@@ -6,7 +6,7 @@
 body{
     font-size: 1.2rem;
     font-family: 'Work Sans',sans-serif;
-    min-height: 2000px;
+    min-height: 1000px;
 }
 
 .hero::before{
@@ -22,6 +22,8 @@ body{
     z-index: -1;
     filter: blur(100%); /* Menambahkan filter blur */
     transition: filter 0.5s ease; /* Menambahkan transisi untuk filter */
+    background-size: cover;
+    background-position: center;
 }
 
 .hero:hover::before {
@@ -64,6 +66,61 @@ body{
     background-color: black;
 }
 
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+.mynavbar .navbar-brand ,
+.mynavbar .offcanvas-title{
+    font-family: 'Sacramento',cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavabr .nav-link{
+    text-transform: uppercase;
+}
+
+.home {
+    background-image: url(bghome.png);
+    background-size: cover;
+    min-height: 100vh;
+    filter: blur(100%);
+    margin-top: -6rem;
+    padding-top: 10rem;
+}
+
+.home h2{
+    font-family: 'Sacramento',cursive;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.home h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+
 /* media query */
 @media (max-width: 992px){
     html{
@@ -80,6 +137,10 @@ body{
     .simply-countdown>.simply-section{
         padding:60px;
         margin: 5px;
+    }
+    .mynavabr .nav-link{
+        font-size: 2rem;
+        text-align: center;
     }
 }
 
@@ -101,10 +162,21 @@ body{
         margin-top: 100px;
     }
 
+    .mynavabr .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 450px){
     .hero h1 {
         font-size: 4rem;
     }
+
+    .mynavabr .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
 }   
+
