@@ -83,7 +83,7 @@ body{
 }
 
 .home {
-    background-image: url(bghome.png);
+    background-image: url(bgund.jpg);
     background-size: cover;
     min-height: 100vh;
     filter: blur(100%) !important;
