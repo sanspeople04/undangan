@@ -86,7 +86,7 @@ body{
     background-image: url(bghome.png);
     background-size: cover;
     min-height: 100vh;
-    filter: blur(100%);
+    filter: blur(100%) !important;
     margin-top: -6rem;
     padding-top: 10rem;
 }
